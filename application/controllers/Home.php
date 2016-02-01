@@ -9,6 +9,15 @@ class Home extends CI_Controller {
 		$this->load->view('home', $data, FALSE);
 	}
 
+	public function getNome(){
+
+		$data = array('1' => 'Guilherme', '2' => 'Daniele');		
+		$this->output
+		->set_content_type('application/json')
+		->set_output(json_encode($data));
+
+	}
+
 }
 
 /* End of file Home.php */
