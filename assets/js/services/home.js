@@ -1,7 +1,7 @@
 angular.module('adminVilladon').factory('homeAPI', ['$http', function($http){
 
 	var _getNome = function(){
-		return $http.get("home/getNome");
+		return $http.get("home/get");
 	}
 
 	return {

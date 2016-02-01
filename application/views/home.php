@@ -2,6 +2,7 @@
 <html ng-app="adminVilladon">
 <head>
 	<title>Home</title>
+	
 	<script type="text/javascript" src="assets/js/libs/angular.min.js"></script>
 	<script type="text/javascript" src="assets/js/libs/angular-cookies.js"></script>
 	<script type="text/javascript" src="assets/js/libs/angular-route.js"></script>

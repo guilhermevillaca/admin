@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Home extends CI_Controller {
+require APPPATH . '/libraries/REST_Controller.php';
+class Home extends REST_Controller  {
 
 	public function index()
 	{
@@ -9,13 +9,15 @@ class Home extends CI_Controller {
 		$this->load->view('home', $data, FALSE);
 	}
 
-	public function getNome(){
+	public function index_get(){
 
 		$data = array('1' => 'Guilherme', '2' => 'Daniele');		
-		$this->output
+		/*$this->output
 		->set_content_type('application/json')
-		->set_output(json_encode($data));
+		->set_output(json_encode($data));*/
 
+		$this->response($data);
+		$this->load->view('home', $data, FALSE);
 	}
 
 }
